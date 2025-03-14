@@ -82,7 +82,7 @@ public:
         }
 
         int host_id = I2C_HOST_ID_DEFAULT;      ///< I2C host ID
-        std::optional<HostConfig> host;         ///< Host configuration. If not set, the host will not be initialized
+        std::optional<HostConfig> host = std::nullopt;         ///< Host configuration. If not set, the host will not be initialized
         ControlPanelConfig control_panel = {};  ///< Control panel configuration
     };
 

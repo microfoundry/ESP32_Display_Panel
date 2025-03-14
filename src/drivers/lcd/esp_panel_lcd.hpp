@@ -138,7 +138,7 @@ public:
         void print() const;
 
         const char *name = "";                  /*!< LCD controller name, defaults to `""` */
-        BasicBusSpecification basic_bus_spec;   /*!< Bus interface specifications */
+        BasicBusSpecification basic_bus_spec = {};   /*!< Bus interface specifications */
     };
 
     /**

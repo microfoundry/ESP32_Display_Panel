@@ -93,7 +93,7 @@ public:
         }
 
         int host_id = QSPI_HOST_ID_DEFAULT;     ///< QSPI host ID
-        std::optional<HostConfig> host;         ///< Host configuration. If not set, the host will not be initialized
+        std::optional<HostConfig> host = std::nullopt;         ///< Host configuration. If not set, the host will not be initialized
         ControlPanelConfig control_panel = ControlPanelPartialConfig{}; ///< Control panel configuration
     };
 

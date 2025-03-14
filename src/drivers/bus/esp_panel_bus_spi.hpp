@@ -91,7 +91,7 @@ public:
         }
 
         int host_id = SPI_HOST_ID_DEFAULT;  ///< SPI host ID
-        std::optional<HostConfig> host;     ///< Host configuration. If not set, the host will not be initialized
+        std::optional<HostConfig> host = std::nullopt;     ///< Host configuration. If not set, the host will not be initialized
         ControlPanelConfig control_panel = ControlPanelPartialConfig{}; ///< Control panel configuration
     };
 
